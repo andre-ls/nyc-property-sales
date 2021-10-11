@@ -52,7 +52,7 @@ data = data[(data['Sale Price'] >= sale_price_min) & (data['Sale Price'] <= sale
 # Introduction
 column_image, column_title = st.columns([0.2,2.0])
 with column_image:
-    st.image('https://img-premium.flaticon.com/png/512/2359/premium/2359705.png?token=exp=1633614279~hmac=264e1953cea94046e830ebb37c76b7f7',width=100)
+    st.image('Icons/new-york.png',width=100)
 
 with column_title:
     st.title('NYC Properties Sales')
@@ -68,19 +68,19 @@ avg_year = np.round(data['Year Built'].mean(),2)
 space_left, column_image_1, column_1, column_image_2, column_2, column_image_3, column_3, space_right = st.columns([1.0, 0.7, 2.0, 0.7, 2.0, 0.7, 2.0, 0.2])
 
 with column_image_1:
-    st.image('https://img-premium.flaticon.com/png/512/3044/premium/3044876.png?token=exp=1633611518~hmac=385d97444ad2e9f2f838febaa54958da',width=70)
+    st.image('Icons/dollar.png',width=70)
 
 with column_1:
     st.metric('Average Sale Price ($)', avg_price)
 
 with column_image_2:
-    st.image('https://cdn-icons-png.flaticon.com/512/3696/3696435.png',width=70)
+    st.image('Icons/area-chart.png',width=70)
 
 with column_2:
     st.metric('Average Area of Properties (ft²)', avg_area)
 
 with column_image_3:
-    st.image('https://cdn-icons-png.flaticon.com/512/2413/2413653.png',width=70)
+    st.image('Icons/calendar.png',width=70)
 
 with column_3:
     st.metric('Average Year Built', avg_year)
@@ -105,6 +105,8 @@ with badge_column:
     st.write('')
     st.title('Find Me!')
     st.write("&nbsp[![Buy me a coffee](https://img.shields.io/badge/GitHub-000013?style=for-the-badge&logo=github&logoColor=white&link=https://tr.linkedin.com/in/andr%C3%A9lamachado)](https://github.com/andre-ls)&nbsp[![Connect](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://tr.linkedin.com/in/andr%C3%A9lamachado)](https://tr.linkedin.com/in/andrélamachado)")
+    st.title('Credits')
+    st.write("Icons made by [Iconixar](https://www.flaticon.com/authors/iconixar), [Flat Icons](https://www.flaticon.com/authors/flat-icons), [surang](https://www.flaticon.com/authors/surang) and [Icon Pond](https://www.flaticon.com/authors/icon-pond), found on [FlatIcon](https://www.flaticon.com/).")
 
 
 
