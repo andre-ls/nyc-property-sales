@@ -110,7 +110,3 @@ with badge_column:
 
 
 
-
-
-
-
