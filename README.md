@@ -23,20 +23,30 @@ Since the idea behind this project is mostly analytical, the proposed project co
 To explore the data, a Jupyter Notebook containg some interesting charts were created. From that, some cool insights, could be obtained:
 
 * The distribution of Sales Price in New York presents a very long-tail, which means that a lot of very expensive properties can be found on the city.
+  
+  <img src='Images/sales_price.png' style="width:700px;height:600px" >
+
 * Apartments and Dwellings consists on the most popular types of properties on the city.
+  
+  <img src='Images/building_class.png' style="width:700px;height:600px">
+
 * Sales Prices have a strong weekly seasonality aspect, where the prices of closed sales, on average, drop a lot on weekend days. 
 
+  <img src='Images/seasonality.png' style="width:800px;height:450px">
+
 ## 4. Streamlit App
-Together with the Notebook, a Streamlit App is proposed in a way to analyze the variations of price with different locations of the city in a more interactive way.
+Together with the Notebook, a Streamlit App is proposed in a way to analyze the variations of price with different locations of the city in a more interactive way. The app can be acessed [here](https://nyc-sales.herokuapp.com/).
+
+<img src='Images/app.png'>
 
 ## 5. Conclusions
-Cetainly, living in New York City appears quite expensive, which is not impressive given the global importance of the city and the fact that it is the most populous city in the United States.
+Certainly, living in New York City appears quite expensive, which is not impressive given the global importance of the city and the fact that it is the most populous city in the United States.
 
 The data involved on this project is very rich in details, and some interesting analysis and charts could be obtained from it, generating useful insights that could be valuable in a Housing Market context.
 
 ## 6. Next Steps
 Future Steps for this project could involve:
 * More detailed Geocoding process, using the entire address to obtain more precise locations.
-* Develop a Machine Learning Model to price propertires according to it's main characteristics.
+* Develop a Machine Learning Model to price properties according to it's main characteristics.
 
  
