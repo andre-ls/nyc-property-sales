@@ -7,9 +7,10 @@ from map_config import config_point, config_hex
 import streamlit as st 
 
 st.set_page_config(layout='wide')
+app_directory = os.path.dirname(__file__)
 
 # Data Reading
-data = pd.read_csv(os.path.join(os.path.dirname(__file__),"nyc-app.csv"),index_col=0)
+data = pd.read_csv(os.path.join(app_directory,"nyc-app.csv"),index_col=0)
 
 # Data Pre-processing
 data = data[data['X Coordinate'] != 'Not Found']
@@ -53,7 +54,7 @@ data = data[(data['Sale Price'] >= sale_price_min) & (data['Sale Price'] <= sale
 # Introduction
 column_image, column_title = st.columns([0.2,2.0])
 with column_image:
-    st.image('Icons/new-york.png',width=100)
+    st.image(os.path.join(app_directory,"Icons/new-york.png"),width=100)
 
 with column_title:
     st.title('NYC Properties Sales')
@@ -69,19 +70,19 @@ avg_year = np.round(data['Year Built'].mean(),2)
 space_left, column_image_1, column_1, column_image_2, column_2, column_image_3, column_3, space_right = st.columns([1.0, 0.7, 2.0, 0.7, 2.0, 0.7, 2.0, 0.2])
 
 with column_image_1:
-    st.image('Icons/dollar.png',width=70)
+    st.image(os.path.join(app_directory,"Icons/dollar.png"),width=70)
 
 with column_1:
     st.metric('Average Sale Price ($)', avg_price)
 
 with column_image_2:
-    st.image('Icons/area-chart.png',width=70)
+    st.image(os.path.join(app_directory,"Icons/area-chart.png"),width=70)
 
 with column_2:
     st.metric('Average Area of Properties (ft²)', avg_area)
 
 with column_image_3:
-    st.image('Icons/calendar.png',width=70)
+    st.image(os.path.join(app_directory,"Icons/calendar.png"),width=70)
 
 with column_3:
     st.metric('Average Year Built', avg_year)
