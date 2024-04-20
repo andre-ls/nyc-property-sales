@@ -106,7 +106,7 @@ with badge_column:
     st.write('')
     st.write('')
     st.title('Find Me!')
-    st.write("&nbsp[![Buy me a coffee](https://img.shields.io/badge/GitHub-000013?style=for-the-badge&logo=github&logoColor=white&link=https://tr.linkedin.com/in/andr%C3%A9lamachado)](https://github.com/andre-ls)&nbsp[![Connect](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://tr.linkedin.com/in/andr%C3%A9lamachado)](https://tr.linkedin.com/in/andrélamachado)")
+    st.write("[![Buy me a coffee](https://img.shields.io/badge/GitHub-000013?style=for-the-badge&logo=github&logoColor=white&link=https://tr.linkedin.com/in/andr%C3%A9lamachado)](https://github.com/andre-ls)\n[![Connect](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://tr.linkedin.com/in/andr%C3%A9lamachado)](https://tr.linkedin.com/in/andrélamachado)")
     st.title('Credits')
     st.write("Icons made by [Iconixar](https://www.flaticon.com/authors/iconixar), [Flat Icons](https://www.flaticon.com/authors/flat-icons), [surang](https://www.flaticon.com/authors/surang) and [Icon Pond](https://www.flaticon.com/authors/icon-pond), found on [FlatIcon](https://www.flaticon.com/).")
 
