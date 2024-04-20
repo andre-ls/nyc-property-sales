@@ -8,7 +8,7 @@ import streamlit as st
 st.set_page_config(layout='wide')
 
 # Data Reading
-data = pd.read_csv('./nyc-app.csv',index_col=0)
+data = pd.read_csv("./nyc-app.csv",index_col=0)
 
 # Data Pre-processing
 data = data[data['X Coordinate'] != 'Not Found']
