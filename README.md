@@ -35,7 +35,7 @@ To explore the data, a Jupyter Notebook containg some interesting charts were cr
   <img src='Images/seasonality.png' style="width:800px;height:450px">
 
 ## 4. Streamlit App
-Together with the Notebook, a Streamlit App is proposed in a way to analyze the variations of price with different locations of the city in a more interactive way. The app can be acessed [here](https://nyc-sales.herokuapp.com/).
+Together with the Notebook, a Streamlit App is proposed in a way to analyze the variations of price with different locations of the city in a more interactive way. The app can be acessed [here](https://nyc-property-sales.streamlit.app/).
 
 <img src='Images/app.png'>
 
