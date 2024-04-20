@@ -1,3 +1,4 @@
+import os
 import numpy as np 
 import pandas as pd 
 from keplergl import KeplerGl
@@ -8,7 +9,7 @@ import streamlit as st
 st.set_page_config(layout='wide')
 
 # Data Reading
-data = pd.read_csv("./nyc-app.csv",index_col=0)
+data = pd.read_csv(os.path.join(os.path.dirname(__file__),"nyc-app.csv"),index_col=0)
 
 # Data Pre-processing
 data = data[data['X Coordinate'] != 'Not Found']
